@@ -20,8 +20,14 @@ jobs:
       - name: Install pytest
         run: pip install pytest
 
-      - name: Run tests
-        run: pytest
+      - name: Run Person 1 tests
+        run: pytest test_app.py
 
-      - name: Run application
+      - name: Run Person 2 tests
+        run: pytest test_calculator.py
+
+      - name: Run Person 1 application
         run: python app.py
+
+      - name: Run Person 2 application
+        run: python calculator.py
