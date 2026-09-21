@@ -1,0 +1,36 @@
+def calculate_average(marks):
+    return sum(marks) / len(marks)
+
+
+def calculate_grade(average):
+    if average >= 90:
+        return "A"
+    elif average >= 75:
+        return "B"
+    elif average >= 60:
+        return "C"
+    elif average >= 40:
+        return "D"
+    else:
+        return "F"
+
+
+def student_result(name, marks):
+    average = calculate_average(marks)
+    grade = calculate_grade(average)
+
+    return {
+        "name": name,
+        "average": average,
+        "grade": grade
+    }
+
+
+print("Person 3 - Student Grade Application")
+
+marks = [80, 75, 90]
+result = student_result("Rahul", marks)
+
+print("Student:", result["name"])
+print("Average:", result["average"])
+print("Grade:", result["grade"])
