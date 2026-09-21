@@ -26,8 +26,14 @@ jobs:
       - name: Run Person 2 tests
         run: pytest test_calculator.py
 
+      - name: Run Person 3 tests
+        run: pytest test_student.py
+
       - name: Run Person 1 application
         run: python app.py
 
       - name: Run Person 2 application
         run: python calculator.py
+
+      - name: Run Person 3 application
+        run: python student.py
