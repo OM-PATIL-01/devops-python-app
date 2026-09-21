@@ -26,7 +26,7 @@ def student_result(name, marks):
     }
 
 
-print("Person 3 - Student Grade Application")
+print("Person 3 - Student Grade CI/CD Application")
 
 marks = [80, 75, 90]
 result = student_result("Rahul", marks)
